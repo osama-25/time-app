@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Afterglow;
+    src: url(Afterglow-Regular.woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Afterglow';
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+h1{
+    position: absolute;
+    font-family: 'Afterglow';
+    text-align: center;
+    font-size: 7vw;
+    color: azure;
+    max-height: 150px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    min-width: 400px;
+    max-width: 800px;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.showbutton{
+    position: absolute;
+    bottom: 25%;
+    color: azure;
+    cursor: pointer;
+}
+
+.showbutton:hover{
+    color: white;
+}
+
+.modal{
+    display: none;
+    border: 2px solid black;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border-radius: .25rem;
+}
+
+.modal.is-open{
+    display: block;
+}
+
+.modal_overlay{
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    border-radius: .25rem;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#modal-1-title{
+    font-weight: 400;
+}
+
+.inside_modal_container{
+    position: relative;
+    height: 100%;
+}
+
+button{
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #e6e6e6;
+    color: black;
+    border-radius: .25rem;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid black;
+}
+
+select{
+    font-size: 1rem;
+}

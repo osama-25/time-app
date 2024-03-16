@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js"></script>
+    <title>time</title>
+</head>
+<body>
+    <div class="container">
+        <img src="background_image.png">
+        <h1 id="time"></h1>
+        <label class="showbutton" onclick="showmodal()">timezone</label>
+    </div>
+
+    <div id="modal-1" aria-hidden="true" class="modal">
+
+        <!-- [2] -->
+        <div tabindex="-1" class="modal_overlay" data-micromodal-close>
+      
+          <!-- [3] -->
+          <div class="inside_modal_container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+      
+      
+            <header>
+              <h2 id="modal-1-title">
+                Modal Title
+              </h2>  
+            </header>
+            <br><br>
+            <select id="timezones" onchange="changetimezone()">
+              <option value="0">GMT+0</option>
+              <option value="1">GMT+1</option>
+              <option value="2">GMT+2</option>
+              <option value="3">GMT+3</option>
+            </select>
+
+            <button aria-label="Close modal" data-micromodal-close>Close</button>
+
+          </div>
+        </div>
+      </div>
+</body>
+</html>
